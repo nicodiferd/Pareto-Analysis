@@ -9,15 +9,23 @@ This is a Pareto analysis project for Flora (an AI project manager/scrum master 
 - Recurring insights across users and prompts
 - Distribution of AI models used
 - Main topics of consideration
+- Individual user behavior patterns and personas
 
 ## Project Structure
 
 ```
-app.py          - Streamlit dashboard for presenting analysis findings
-data/           - Raw and cleaned CSV data
+app.py              - Streamlit dashboard with two main pages:
+                      1. Flora Pareto Analysis (overall metrics)
+                      2. Top 4 User Deep Dive (individual user analysis)
+data/
+  flora-chats-*.csv         - Raw and cleaned CSV data
+  flora-chats-analyzed.csv  - Data with intent categorization
+  top4_user_analysis.json   - Exported user profile data for dashboard
+  *.png                     - Generated Pareto charts and visualizations
 notebooks/
-  cleaning.ipynb  - Data loading and cleaning
-  analysis.ipynb  - Pareto analysis and visualizations
+  cleaning.ipynb    - Data loading and cleaning
+  analysis.ipynb    - Overall Pareto analysis and visualizations
+  quatro_users.ipynb - Deep dive analysis on top 4 users (94% of messages)
 ```
 
 ## Data Format
@@ -59,5 +67,39 @@ uv run streamlit run app.py
 
 **Workflow:**
 1. Run `cleaning.ipynb` to generate `flora-chats-cleaned.csv`
-2. Run `analysis.ipynb` for detailed analysis and charts
-3. Run the Streamlit app for interactive presentation
+2. Run `analysis.ipynb` for detailed analysis and charts (generates `flora-chats-analyzed.csv`)
+3. Run `quatro_users.ipynb` to generate user profiles and charts (generates `top4_user_analysis.json`)
+4. Run the Streamlit app for interactive presentation
+
+## Top 4 User Analysis
+
+The top 4 users account for 94% of all Flora messages. The `quatro_users.ipynb` notebook provides:
+
+| User | Persona | Prompts | Key Characteristic |
+|------|---------|---------|-------------------|
+| User 1 | Power User | 33 | Diverse queries across 6 teams, sophisticated analysis |
+| User 2 | Reporter | 27 | Heavy executive reporting with templated queries |
+| User 3 | Sprint Prepper | 17 | Focused on sprint prep and retrospectives |
+| User 4 | Explorer | 10 | New user learning through conversational iteration |
+
+**Key Contrast (User 1 vs User 4):**
+- User 1: Single-shot queries (81%), knows exactly what to ask
+- User 4: Conversational (75% multi-turn), learns through iteration
+
+## Dashboard Pages
+
+The Streamlit app (`app.py`) has two main pages accessible via sidebar:
+
+1. **Flora Pareto Analysis** - Overall metrics including:
+   - Request type distribution (Pareto)
+   - User activity distribution
+   - First prompt analysis
+   - Engagement depth
+   - Model distribution
+   - Category validation
+
+2. **Top 4 User Deep Dive** - Individual analysis including:
+   - Comparison overview with charts
+   - Individual user profiles with Pareto charts
+   - Combined User 1 + User 4 Pareto visualization
+   - Full prompt history tables

@@ -1,0 +1,729 @@
+{
+  "overview": {
+    "total_messages": 93,
+    "top_4_messages": 87,
+    "top_4_percentage": 93.5,
+    "analysis_date": "2026-01-13"
+  },
+  "user_profiles": {
+    "1": {
+      "user_num": 1,
+      "user_name": "Power User",
+      "user_id_short": "c1d2a96d",
+      "total_prompts": 33,
+      "unique_sessions": 26,
+      "active_days": 9,
+      "first_activity": "2025-12-16",
+      "last_activity": "2026-01-09",
+      "date_span_days": 23,
+      "avg_session_depth": 1.27,
+      "max_session_depth": 3,
+      "single_msg_sessions_pct": 80.8,
+      "multi_turn_sessions_pct": 19.2,
+      "intent_categories_used": 9,
+      "top_intent": "Unclassified",
+      "top_intent_pct": 21.2,
+      "intent_distribution": {
+        "Unclassified": 7,
+        "Information Request": 6,
+        "Executive Reporting": 6,
+        "General Analysis": 4,
+        "Initiative Query": 3,
+        "Sprint Retrospective": 3,
+        "Metrics Query": 2,
+        "Performance Analysis": 1,
+        "Sprint Query": 1
+      },
+      "high_confidence_pct": 51.5,
+      "peak_day": "2026-01-05",
+      "peak_day_prompts": 10,
+      "prompts_per_active_day": 3.67,
+      "all_prompts": [
+        {
+          "timestamp": "2025-12-16 20:44",
+          "instruction": "show me @IDMboard data\\n",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-17 20:17",
+          "instruction": "what is going on in my objective, AI Strategy Recommendations. Is it at risk?",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-18 16:44",
+          "instruction": "Give me a breakdown of the Non-initiative work in November?",
+          "intent_category": "Initiative Query",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2025-12-30 16:02",
+          "instruction": "What epics in the ART1 Program board had the most tasks associated to them from January 2025",
+          "intent_category": "Initiative Query",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2025-12-30 16:26",
+          "instruction": "Analyze this outcome's performance. Include insights on progress, risk factors, team focus, and recommendations for improvement.",
+          "intent_category": "General Analysis",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2025-12-30 16:26",
+          "instruction": "NOw give me a path forward to reduce risks",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2025-12-30 16:34",
+          "instruction": "Analyze this outcome's performance. Include insights on progress, risk factors, team focus, and recommendations for improvement.",
+          "intent_category": "General Analysis",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-05 16:54",
+          "instruction": "Analyze data work period 'REBEL-2025 SP26'",
+          "intent_category": "General Analysis",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-05 17:09",
+          "instruction": "provide a performance analysis for work period 'REBEL-2025 SP26'",
+          "intent_category": "Performance Analysis",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-05 17:17",
+          "instruction": "Im preparing for a sprint retro and want to analyze work period 'STAR-2025 SP23'. Please provide executive summary, key metric performance, Performanc",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 17:19",
+          "instruction": "For work period 'STAR-2025 SP23' Provide executive summary, key metric performance and flow of work analysis",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 17:20",
+          "instruction": "provide sprint reto analysis for work period 'STAR-2025 SP23'",
+          "intent_category": "Sprint Retrospective",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 17:21",
+          "instruction": "provide sprint reto analysis for work period 'STAR-2025 SP23'",
+          "intent_category": "Sprint Retrospective",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 17:23",
+          "instruction": "for work period 'REBEL-2025 SP26' provide sprint retro analysis",
+          "intent_category": "Sprint Retrospective",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 18:38",
+          "instruction": "output a chart that shows relationship between throughput and cycle time",
+          "intent_category": "Metrics Query",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 20:20",
+          "instruction": "how many points are closed in the FBI current sprint",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2026-01-05 20:22",
+          "instruction": "How has my project been performing over the past month?",
+          "intent_category": "Initiative Query",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-06 19:17",
+          "instruction": "Provide a Executive summary and Performance analysis for Growth Team Board from 7/1/25 - 12/31/25",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-06 20:28",
+          "instruction": "For work period 'REBEL-2025 SP26' provide Executive Summary, sprint retro analysis, and Performance analysis",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-06 21:08",
+          "instruction": "why is my portfolio performance decreasing in december",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2026-01-06 21:09",
+          "instruction": "`",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2026-01-06 21:10",
+          "instruction": "can you compare december with november data\\n",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2026-01-07 01:50",
+          "instruction": "Analyze [@REBEL-Scrum] from 8/1/25 through 12/31/25 and identify where the main bottlenecks, and which workflow states contribute most to delays?",
+          "intent_category": "General Analysis",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-07 13:13",
+          "instruction": "Tell me about [REF]@parent:board:b1192a4c-f0fb-4fac-aa9a-17b284d95b8e[REBEL-Scrum]",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:14",
+          "instruction": "For work period 'REBEL-2025 SP26' provide Executive Summary, Sprint Retro Analysis, and Performance analysis",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:30",
+          "instruction": "Tell me about board REBEL-Scrum from 12/1/25 - 12/31/25",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:34",
+          "instruction": "show be results across my portfolio for SP26",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2026-01-08 19:58",
+          "instruction": "What would you consider the root cause of the Q4 throughput/velocity drop?",
+          "intent_category": "Metrics Query",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-09 14:17",
+          "instruction": "Analyze data for the last 5 work periods on [REF]",
+          "intent_category": "Sprint Query",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-09 16:29",
+          "instruction": "Tell me about this initiative",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-09 16:57",
+          "instruction": "tell me about this initiative",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-09 17:04",
+          "instruction": "For work period [REF]@parent:board:b1192a4c-f0fb-4fac-aa9a-17b284d95b8e[REBEL-Scrum] provide Executive Summary, Sprint Retro Analysis, and Performance",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-09 17:10",
+          "instruction": "Can you show Readiness over this sprint",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        }
+      ]
+    },
+    "2": {
+      "user_num": 2,
+      "user_name": "Reporter",
+      "user_id_short": "66453e68",
+      "total_prompts": 27,
+      "unique_sessions": 25,
+      "active_days": 7,
+      "first_activity": "2025-12-10",
+      "last_activity": "2026-01-08",
+      "date_span_days": 28,
+      "avg_session_depth": 1.08,
+      "max_session_depth": 3,
+      "single_msg_sessions_pct": 96.0,
+      "multi_turn_sessions_pct": 4.0,
+      "intent_categories_used": 6,
+      "top_intent": "Executive Reporting",
+      "top_intent_pct": 74.1,
+      "intent_distribution": {
+        "Executive Reporting": 20,
+        "Information Request": 2,
+        "Data Analysis": 2,
+        "Metrics Query": 1,
+        "Unclassified": 1,
+        "Initiative Query": 1
+      },
+      "high_confidence_pct": 92.6,
+      "peak_day": "2025-12-15",
+      "peak_day_prompts": 10,
+      "prompts_per_active_day": 3.86,
+      "all_prompts": [
+        {
+          "timestamp": "2025-12-10 19:58",
+          "instruction": "Explain to me for BDC Tools the cycle time trends for the last 30 days from November 1st to December 1st and actions that can be taken to improve that",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-10 19:59",
+          "instruction": "Throughput and Velocity Comparisons",
+          "intent_category": "Metrics Query",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-10 20:02",
+          "instruction": "Explain to me for the DSE board team the cycle time trends for the last 30 days from November 1st to December 1st and actions that can be taken to imp",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-10 21:52",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-10 21:52",
+          "instruction": "\"Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactfu",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 19:05",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 19:09",
+          "instruction": "Analyze the following progress data for this initiative. This includes tasks or points completed and the total. Future tasks or points are a projectio",
+          "intent_category": "Data Analysis",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 19:19",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 21:44",
+          "instruction": "{\"input\": \"Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences an",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 21:47",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 21:48",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 21:56",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 22:01",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 23:25",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-15 23:27",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-16 14:29",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-16 14:38",
+          "instruction": "Analyze the following progress data for this initiative. This includes tasks or points completed and the total. Future tasks or points are a projectio",
+          "intent_category": "Data Analysis",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-16 14:58",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-16 20:44",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-16 22:23",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-16 22:32",
+          "instruction": "What action items could I take based on this datat?",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2025-12-17 19:46",
+          "instruction": "Why is this epic: Stripe: Rollout subscriptions to all airlines at risk?",
+          "intent_category": "Initiative Query",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2025-12-17 20:10",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2025-12-30 16:02",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 16:13",
+          "instruction": "\"Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactfu",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-08 16:20",
+          "instruction": "{\"messages\": [{\"content\": \"Analyze the following contributing Epic data for this initiative and provide a concise summary of the key findings. This da",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-08 16:42",
+          "instruction": "{\"messages\": [{\"content\": \"Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a ",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        }
+      ]
+    },
+    "3": {
+      "user_num": 3,
+      "user_name": "Sprint Prepper",
+      "user_id_short": "1927df39",
+      "total_prompts": 17,
+      "unique_sessions": 16,
+      "active_days": 5,
+      "first_activity": "2026-01-05",
+      "last_activity": "2026-01-09",
+      "date_span_days": 4,
+      "avg_session_depth": 1.06,
+      "max_session_depth": 2,
+      "single_msg_sessions_pct": 93.8,
+      "multi_turn_sessions_pct": 6.2,
+      "intent_categories_used": 4,
+      "top_intent": "Executive Reporting",
+      "top_intent_pct": 76.5,
+      "intent_distribution": {
+        "Executive Reporting": 13,
+        "Sprint Retrospective": 2,
+        "Unclassified": 1,
+        "Empty Input": 1
+      },
+      "high_confidence_pct": 94.1,
+      "peak_day": "2026-01-05",
+      "peak_day_prompts": 9,
+      "prompts_per_active_day": 3.4,
+      "all_prompts": [
+        {
+          "timestamp": "2026-01-05 14:19",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 14:24",
+          "instruction": "How did the tasks flow through the statuses",
+          "intent_category": "Unclassified",
+          "confidence": "low"
+        },
+        {
+          "timestamp": "2026-01-05 16:39",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 16:43",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 17:15",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 17:23",
+          "instruction": "for work period 'REBEL-2025 SP26' provide sprint retro analysis",
+          "intent_category": "Sprint Retrospective",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 18:33",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 18:43",
+          "instruction": "For [REF]@parent:board:b1192a4c-f0fb-4fac-aa9a-17b284d95b8e provide sprint retro analysis",
+          "intent_category": "Sprint Retrospective",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 18:44",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-06 20:24",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-06 20:38",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 13:14",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:26",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-08 14:03",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-08 17:52",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-09 17:00",
+          "instruction": "[EMPTY]",
+          "intent_category": "Empty Input",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-09 17:00",
+          "instruction": "Analyze the following data and provide a concise summary of the key findings. Keep your response in a short paragraph of a few sentences and impactful",
+          "intent_category": "Executive Reporting",
+          "confidence": "high"
+        }
+      ]
+    },
+    "4": {
+      "user_num": 4,
+      "user_name": "Explorer",
+      "user_id_short": "0c4eee93",
+      "total_prompts": 10,
+      "unique_sessions": 4,
+      "active_days": 2,
+      "first_activity": "2026-01-05",
+      "last_activity": "2026-01-07",
+      "date_span_days": 2,
+      "avg_session_depth": 2.5,
+      "max_session_depth": 4,
+      "single_msg_sessions_pct": 25.0,
+      "multi_turn_sessions_pct": 75.0,
+      "intent_categories_used": 4,
+      "top_intent": "Information Request",
+      "top_intent_pct": 50.0,
+      "intent_distribution": {
+        "Information Request": 5,
+        "Metrics Query": 3,
+        "Initiative Query": 1,
+        "Empty Input": 1
+      },
+      "high_confidence_pct": 90.0,
+      "peak_day": "2026-01-07",
+      "peak_day_prompts": 7,
+      "prompts_per_active_day": 5.0,
+      "all_prompts": [
+        {
+          "timestamp": "2026-01-05 16:39",
+          "instruction": "how are my top 25 initiatives doing for deliverability",
+          "intent_category": "Initiative Query",
+          "confidence": "medium"
+        },
+        {
+          "timestamp": "2026-01-05 16:40",
+          "instruction": "Show me all of my off-track initiatives.",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-05 16:44",
+          "instruction": "Show me all of my off-track initiatives.",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:13",
+          "instruction": "what is the velocity for the last six sprints for FBI team",
+          "intent_category": "Metrics Query",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:16",
+          "instruction": "what is the velocity for the last 6 sprints for CS-Federal Bureau of Iteration",
+          "intent_category": "Metrics Query",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:17",
+          "instruction": "what is the velocity for CS-Federal Bureau of Iteration for sprint 26",
+          "intent_category": "Metrics Query",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:29",
+          "instruction": "[EMPTY]",
+          "intent_category": "Empty Input",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:32",
+          "instruction": "tell me about CS-Federal Bureau of Iteration for december 2026",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:33",
+          "instruction": "tell me about CS-Federal Bureau of Iteration for december 2026",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        },
+        {
+          "timestamp": "2026-01-07 19:33",
+          "instruction": "tell me about CS-Federal Bureau of Iteration for december 2025",
+          "intent_category": "Information Request",
+          "confidence": "high"
+        }
+      ]
+    }
+  },
+  "comparison": [
+    {
+      "User": "User 1",
+      "Persona": "Power User",
+      "Prompts": 33,
+      "Sessions": 26,
+      "Active Days": 9,
+      "Avg Depth": 1.27,
+      "Single-msg %": 80.8,
+      "Top Intent": "Unclassified",
+      "Top Intent %": 21.2,
+      "Intent Diversity": 9,
+      "High Conf %": 51.5
+    },
+    {
+      "User": "User 2",
+      "Persona": "Reporter",
+      "Prompts": 27,
+      "Sessions": 25,
+      "Active Days": 7,
+      "Avg Depth": 1.08,
+      "Single-msg %": 96.0,
+      "Top Intent": "Executive Reporting",
+      "Top Intent %": 74.1,
+      "Intent Diversity": 6,
+      "High Conf %": 92.6
+    },
+    {
+      "User": "User 3",
+      "Persona": "Sprint Prepper",
+      "Prompts": 17,
+      "Sessions": 16,
+      "Active Days": 5,
+      "Avg Depth": 1.06,
+      "Single-msg %": 93.8,
+      "Top Intent": "Executive Reporting",
+      "Top Intent %": 76.5,
+      "Intent Diversity": 4,
+      "High Conf %": 94.1
+    },
+    {
+      "User": "User 4",
+      "Persona": "Explorer",
+      "Prompts": 10,
+      "Sessions": 4,
+      "Active Days": 2,
+      "Avg Depth": 2.5,
+      "Single-msg %": 25.0,
+      "Top Intent": "Information Request",
+      "Top Intent %": 50.0,
+      "Intent Diversity": 4,
+      "High Conf %": 90.0
+    }
+  ],
+  "user1_vs_user4": {
+    "user1": {
+      "persona": "Power User",
+      "style": "Single-shot, knows what to ask",
+      "scope": "Multi-team (6 boards)",
+      "sophistication": "High (root cause, comparisons)",
+      "engagement": "80.8% single-msg"
+    },
+    "user4": {
+      "persona": "Explorer",
+      "style": "Conversational, learns through iteration",
+      "scope": "Single-team (FBI only)",
+      "sophistication": "Basic (metrics, info requests)",
+      "engagement": "25.0% single-msg"
+    }
+  }
+}
