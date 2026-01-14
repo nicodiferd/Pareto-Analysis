@@ -11,6 +11,8 @@ import plotly.graph_objects as go
 from pathlib import Path
 import json
 import re
+from datetime import datetime, timedelta
+import extra_streamlit_components as stx
 
 # Page config
 st.set_page_config(
@@ -18,6 +20,54 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+
+# ============================================================================
+# AUTHENTICATION (with 15-minute cookie cache)
+# ============================================================================
+AUTH_CODE = "BLOOMFLORA2026"
+AUTH_COOKIE_NAME = "flora_auth"
+AUTH_DURATION_MINUTES = 15
+
+# Initialize cookie manager (cannot use @st.cache_resource with widget components)
+cookie_manager = stx.CookieManager()
+
+def check_auth():
+    """Check if user is authenticated via cookie."""
+    auth_cookie = cookie_manager.get(AUTH_COOKIE_NAME)
+    if auth_cookie:
+        try:
+            expiry = datetime.fromisoformat(auth_cookie)
+            if datetime.now() < expiry:
+                return True
+        except (ValueError, TypeError):
+            pass
+    return False
+
+def set_auth_cookie():
+    """Set authentication cookie with 15-minute expiry."""
+    expiry = datetime.now() + timedelta(minutes=AUTH_DURATION_MINUTES)
+    cookie_manager.set(AUTH_COOKIE_NAME, expiry.isoformat(), expires_at=expiry)
+
+if 'authenticated' not in st.session_state:
+    st.session_state.authenticated = check_auth()
+
+if not st.session_state.authenticated:
+    st.markdown("")
+    st.markdown("")
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.title("Flora Pareto Analysis")
+        st.markdown("*Enter access code to continue*")
+        st.markdown("")
+        code = st.text_input("Access Code", type="password", placeholder="Enter code...")
+        if st.button("Submit", use_container_width=True):
+            if code == AUTH_CODE:
+                st.session_state.authenticated = True
+                set_auth_cookie()
+                st.rerun()
+            else:
+                st.error("Invalid access code")
+    st.stop()
 
 # Data paths
 DATA_DIR = Path("data")
@@ -237,11 +287,12 @@ st.divider()
 st.markdown("")  # Spacing
 
 # Tabs
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "📊 Request Types (Pareto)",
     "👥 User Distribution",
     "🎯 First Prompt Analysis",
     "💬 Engagement Depth",
+    "🤖 Model Distribution",
     "🔍 Validation"
 ])
 
@@ -394,9 +445,82 @@ with tab4:
         st.metric("Multi-turn Sessions", f"{multi_msg/len(session_depths)*100:.0f}%")
 
 # ============================================================================
-# TAB 5: VALIDATION
+# TAB 5: MODEL DISTRIBUTION
 # ============================================================================
 with tab5:
+    st.header("Model Distribution")
+    st.markdown("*AI models powering Flora responses*")
+
+    st.markdown("")  # Spacing
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        # Model provider distribution (pie chart)
+        model_counts = df['model'].value_counts()
+
+        fig = go.Figure(data=[go.Pie(
+            labels=model_counts.index.tolist(),
+            values=model_counts.values.tolist(),
+            marker_colors=['#10B981', '#3B82F6', '#F59E0B'],
+            hole=0.4,
+            textinfo='label+percent',
+            textfont=dict(color='white', size=14)
+        )])
+        fig.update_layout(
+            title=dict(text="Model Provider", font=dict(color='white', size=16), x=0.5, xanchor='center'),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)',
+            legend=dict(font=dict(color='white')),
+            height=350
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col2:
+        # Model version detection stats
+        st.subheader("Model Details")
+
+        for model, count in model_counts.items():
+            pct = count / len(df) * 100
+            st.write(f"**{model.upper()}**: {count} messages ({pct:.1f}%)")
+
+        st.markdown("")
+        st.divider()
+        st.markdown("")
+
+        # Model version info
+        if 'model_version' in df.columns:
+            versions_detected = df['model_version'].dropna()
+            st.subheader("Detected Model Versions")
+            if len(versions_detected) > 0:
+                version_counts = versions_detected.value_counts()
+                for version, count in version_counts.items():
+                    st.write(f"**{version}**: {count} messages")
+                st.caption(f"*Version detected in {len(versions_detected)}/{len(df)} messages ({len(versions_detected)/len(df)*100:.1f}%)*")
+            else:
+                st.info("No specific model versions detected in message content")
+
+    st.markdown("")
+
+    # Additional insights
+    st.subheader("Model Usage Insights")
+
+    m1, m2, m3 = st.columns(3)
+    with m1:
+        st.metric("Primary Provider", model_counts.index[0].upper())
+    with m2:
+        st.metric("Total Providers", len(model_counts))
+    with m3:
+        if 'model_version' in df.columns:
+            versions = df['model_version'].dropna().nunique()
+            st.metric("Versions Detected", versions)
+        else:
+            st.metric("Versions Detected", "N/A")
+
+# ============================================================================
+# TAB 6: VALIDATION
+# ============================================================================
+with tab6:
     st.header("Category Validation")
     st.markdown("*Review sample classifications to confirm accuracy.*")
 

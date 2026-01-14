@@ -1,0 +1,51 @@
+{
+  "overview": {
+    "total_messages": 93,
+    "unique_users": 10,
+    "unique_sessions": 73,
+    "date_range": "2025-12-10 to 2026-01-09"
+  },
+  "request_types": {
+    "distribution": {
+      "Executive Reporting": 42,
+      "Information Request": 13,
+      "Unclassified": 10,
+      "Metrics Query": 7,
+      "Initiative Query": 6,
+      "Sprint Retrospective": 5,
+      "General Analysis": 4,
+      "Empty Input": 2,
+      "Data Analysis": 2,
+      "Performance Analysis": 1,
+      "Sprint Query": 1
+    },
+    "categorization_confidence": {
+      "high": 71,
+      "medium": 12,
+      "low": 10
+    }
+  },
+  "user_distribution": {
+    "top_4_users_pct": 93.5
+  },
+  "engagement": {
+    "avg_session_depth": 1.27,
+    "single_message_sessions_pct": 82.2,
+    "multi_turn_sessions_pct": 17.8
+  },
+  "first_prompt": {
+    "distribution": {
+      "Executive Reporting": 41,
+      "Information Request": 7,
+      "Sprint Retrospective": 4,
+      "Unclassified": 4,
+      "General Analysis": 4,
+      "Metrics Query": 4,
+      "Initiative Query": 3,
+      "Empty Input": 2,
+      "Data Analysis": 2,
+      "Performance Analysis": 1,
+      "Sprint Query": 1
+    }
+  }
+}

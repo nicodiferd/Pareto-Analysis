@@ -1,0 +1,15 @@
+{
+  "total_messages": 93,
+  "unique_users": 10,
+  "unique_sessions": 73,
+  "avg_session_depth": 1.27,
+  "single_message_sessions_pct": 82.2,
+  "pct_with_json_payload": 41.9,
+  "pct_with_reference": 4.3,
+  "first_message_date": "2025-12-10 19:58:44.193000+00:00",
+  "last_message_date": "2026-01-09 17:10:56.745000+00:00",
+  "model_distribution": {
+    "openai": 93
+  },
+  "model_versions_detected": 1
+}
