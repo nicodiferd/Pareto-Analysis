@@ -21,20 +21,20 @@
       "single_msg_sessions_pct": 80.8,
       "multi_turn_sessions_pct": 19.2,
       "intent_categories_used": 9,
-      "top_intent": "Unclassified",
-      "top_intent_pct": 21.2,
+      "top_intent": "Information Request",
+      "top_intent_pct": 24.2,
       "intent_distribution": {
-        "Unclassified": 7,
-        "Information Request": 6,
+        "Information Request": 8,
         "Executive Reporting": 6,
         "General Analysis": 4,
-        "Initiative Query": 3,
+        "Metrics Query": 4,
+        "Performance Analysis": 3,
         "Sprint Retrospective": 3,
-        "Metrics Query": 2,
-        "Performance Analysis": 1,
+        "Initiative Query": 2,
+        "Unclassified": 2,
         "Sprint Query": 1
       },
-      "high_confidence_pct": 51.5,
+      "high_confidence_pct": 57.6,
       "peak_day": "2026-01-05",
       "peak_day_prompts": 10,
       "prompts_per_active_day": 3.67,
@@ -132,13 +132,13 @@
         {
           "timestamp": "2026-01-05 20:20",
           "instruction": "how many points are closed in the FBI current sprint",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Metrics Query",
+          "confidence": "high"
         },
         {
           "timestamp": "2026-01-05 20:22",
           "instruction": "How has my project been performing over the past month?",
-          "intent_category": "Initiative Query",
+          "intent_category": "Performance Analysis",
           "confidence": "medium"
         },
         {
@@ -156,8 +156,8 @@
         {
           "timestamp": "2026-01-06 21:08",
           "instruction": "why is my portfolio performance decreasing in december",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Performance Analysis",
+          "confidence": "medium"
         },
         {
           "timestamp": "2026-01-06 21:09",
@@ -168,8 +168,8 @@
         {
           "timestamp": "2026-01-06 21:10",
           "instruction": "can you compare december with november data\\n",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Information Request",
+          "confidence": "medium"
         },
         {
           "timestamp": "2026-01-07 01:50",
@@ -198,8 +198,8 @@
         {
           "timestamp": "2026-01-07 19:34",
           "instruction": "show be results across my portfolio for SP26",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Information Request",
+          "confidence": "medium"
         },
         {
           "timestamp": "2026-01-08 19:58",
@@ -234,8 +234,8 @@
         {
           "timestamp": "2026-01-09 17:10",
           "instruction": "Can you show Readiness over this sprint",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Metrics Query",
+          "confidence": "high"
         }
       ]
     },
@@ -253,18 +253,17 @@
       "max_session_depth": 3,
       "single_msg_sessions_pct": 96.0,
       "multi_turn_sessions_pct": 4.0,
-      "intent_categories_used": 6,
+      "intent_categories_used": 5,
       "top_intent": "Executive Reporting",
       "top_intent_pct": 74.1,
       "intent_distribution": {
         "Executive Reporting": 20,
-        "Information Request": 2,
+        "Metrics Query": 3,
         "Data Analysis": 2,
-        "Metrics Query": 1,
-        "Unclassified": 1,
+        "Information Request": 1,
         "Initiative Query": 1
       },
-      "high_confidence_pct": 92.6,
+      "high_confidence_pct": 96.3,
       "peak_day": "2025-12-15",
       "peak_day_prompts": 10,
       "prompts_per_active_day": 3.86,
@@ -272,7 +271,7 @@
         {
           "timestamp": "2025-12-10 19:58",
           "instruction": "Explain to me for BDC Tools the cycle time trends for the last 30 days from November 1st to December 1st and actions that can be taken to improve that",
-          "intent_category": "Information Request",
+          "intent_category": "Metrics Query",
           "confidence": "high"
         },
         {
@@ -284,7 +283,7 @@
         {
           "timestamp": "2025-12-10 20:02",
           "instruction": "Explain to me for the DSE board team the cycle time trends for the last 30 days from November 1st to December 1st and actions that can be taken to imp",
-          "intent_category": "Information Request",
+          "intent_category": "Metrics Query",
           "confidence": "high"
         },
         {
@@ -392,8 +391,8 @@
         {
           "timestamp": "2025-12-16 22:32",
           "instruction": "What action items could I take based on this datat?",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Information Request",
+          "confidence": "high"
         },
         {
           "timestamp": "2025-12-17 19:46",
@@ -453,7 +452,7 @@
       "intent_distribution": {
         "Executive Reporting": 13,
         "Sprint Retrospective": 2,
-        "Unclassified": 1,
+        "Information Request": 1,
         "Empty Input": 1
       },
       "high_confidence_pct": 94.1,
@@ -470,8 +469,8 @@
         {
           "timestamp": "2026-01-05 14:24",
           "instruction": "How did the tasks flow through the statuses",
-          "intent_category": "Unclassified",
-          "confidence": "low"
+          "intent_category": "Information Request",
+          "confidence": "medium"
         },
         {
           "timestamp": "2026-01-05 16:39",
@@ -665,10 +664,10 @@
       "Active Days": 9,
       "Avg Depth": 1.27,
       "Single-msg %": 80.8,
-      "Top Intent": "Unclassified",
-      "Top Intent %": 21.2,
+      "Top Intent": "Information Request",
+      "Top Intent %": 24.2,
       "Intent Diversity": 9,
-      "High Conf %": 51.5
+      "High Conf %": 57.6
     },
     {
       "User": "User 2",
@@ -680,8 +679,8 @@
       "Single-msg %": 96.0,
       "Top Intent": "Executive Reporting",
       "Top Intent %": 74.1,
-      "Intent Diversity": 6,
-      "High Conf %": 92.6
+      "Intent Diversity": 5,
+      "High Conf %": 96.3
     },
     {
       "User": "User 3",

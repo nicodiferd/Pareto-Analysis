@@ -168,20 +168,28 @@ def categorize_intent(instruction):
     if re.search(r'(sprint|retro|retrospective).*(analysis|review)', text):
         return ('Sprint Retrospective', 'high', 'Requests sprint retrospective analysis')
 
-    # Pattern 4: Velocity/Metrics Queries
-    if re.search(r'(velocity|throughput|burndown|metrics)', text):
+    # Pattern 4: Velocity/Metrics Queries (expanded)
+    if re.search(r'(velocity|throughput|burndown|metrics|readiness|cycle.?time|lead.?time|rework)', text):
         return ('Metrics Query', 'high', 'Requests specific metrics')
 
-    # Pattern 5: Information Requests (conversational)
-    if re.search(r'^(tell me|what is|what are|describe|explain|show me)', text):
+    # Pattern 4b: Quantity questions about work items
+    if re.search(r'how many.*(points|tasks|stories|items|cards)', text):
+        return ('Metrics Query', 'high', 'Quantity question about metrics')
+
+    # Pattern 5: Information Requests (conversational, expanded)
+    if re.search(r'^(tell me|what is|what are|describe|explain|show me|can you show|what action)', text):
         return ('Information Request', 'high', 'Asks for information/explanation')
 
     # Pattern 6: Performance Analysis
     if re.search(r'performance.*(analysis|review|check)', text):
         return ('Performance Analysis', 'medium', 'Requests performance analysis')
 
+    # Pattern 6b: Performance trend questions
+    if re.search(r'(why|how).*(decreas|increas|perform|trend)', text):
+        return ('Performance Analysis', 'medium', 'Performance trend question')
+
     # Pattern 7: Work Period / Sprint Context Queries
-    if re.search(r'(for|about).*(work.?period|sprint|\\[ref\\])', text):
+    if re.search(r'(for|about).*(work.?period|sprint|\[ref\])', text):
         if re.search(r'(summary|report|overview)', text):
             return ('Sprint Reporting', 'medium', 'Requests report for specific sprint')
         else:
@@ -194,6 +202,10 @@ def categorize_intent(instruction):
     # Pattern 9: Generic Analysis Request
     if re.search(r'^analyze', text):
         return ('General Analysis', 'medium', 'Generic analysis request')
+
+    # Pattern 10: Remaining conversational questions
+    if re.search(r'^(can you|could you|show|how|what)\b', text):
+        return ('Information Request', 'medium', 'Conversational question')
 
     return ('Unclassified', 'low', 'No pattern matched')
 
